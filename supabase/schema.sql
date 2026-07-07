@@ -1,5 +1,3 @@
--- Supabase SQL Editor에서 이 파일 전체를 실행하세요.
--- Dashboard → SQL Editor → New query → 붙여넣기 → Run
 
 create table if not exists public.reviews (
   id bigint generated always as identity primary key,
@@ -26,7 +24,7 @@ create policy "Anyone can submit reviews"
   for insert
   with check (is_visible = true);
 
--- 기존 하드코딩 후기 시드 (테이블이 비어 있을 때만 삽입)
+-- 기존 하드코딩 후기 시드 
 do $$
 begin
   if not exists (select 1 from public.reviews limit 1) then
