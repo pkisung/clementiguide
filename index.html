@@ -47,6 +47,12 @@ p.lead{color:var(--muted);font-size:0.97rem;line-height:1.7;max-width:620px;}
 .btn{display:inline-block;background:var(--dark);color:var(--gold);padding:0.75rem 1.7rem;border-radius:2px;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:none;transition:background .2s;}
 .btn:hover{background:var(--mid);}
 .menu-toggle{display:none;background:none;border:none;color:var(--dark);font-size:1.4rem;cursor:pointer;}
+.footer-inner{max-width:1100px;margin:0 auto;}
+.footer-brand{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold);letter-spacing:0.08em;margin-bottom:1rem;}
+.footer-brand b{font-weight:600;}
+.footer-info{font-size:0.76rem;line-height:1.9;color:rgba(253,252,251,0.55);}
+.footer-info span{color:rgba(253,252,251,0.75);}
+.footer-copy{margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(201,168,76,0.15);font-size:0.72rem;color:rgba(253,252,251,0.4);letter-spacing:0.04em;}
 @media(max-width:760px){
   nav{padding:0 1.2rem;}
   .nlinks{position:fixed;top:64px;left:0;right:0;background:var(--white);flex-direction:column;gap:0;padding:0;border-bottom:1px solid rgba(201,168,76,0.2);max-height:0;overflow:hidden;transition:max-height .3s;}
@@ -58,7 +64,6 @@ p.lead{color:var(--muted);font-size:0.97rem;line-height:1.7;max-width:620px;}
   .hero-h1{font-size:2rem !important;}
   .grid-2,.grid-3{grid-template-columns:1fr !important;}
   .contact-grid{grid-template-columns:1fr !important;}
-  .footer-row{flex-direction:column;gap:0.8rem;text-align:center;}
 }
 </style>
 </head>
@@ -302,10 +307,15 @@ p.lead{color:var(--muted);font-size:0.97rem;line-height:1.7;max-width:620px;}
   </div>
 </div>
 
-<div style="background:var(--dark);color:rgba(253,252,251,0.5);padding:1.8rem 2.5rem;">
-  <div class="footer-row" style="max-width:1100px;margin:0 auto;font-size:0.76rem;letter-spacing:0.05em;display:flex;justify-content:space-between;align-items:center;">
-    <span style="font-family:'Playfair Display',serif;color:var(--gold);font-size:1rem;">CLEMENTI GUIDE</span>
-    <span>전화 010-2597-7737 · sgkim4797@gmail.com</span>
+<div style="background:var(--dark);padding:2.2rem 2.5rem;">
+  <div class="footer-inner">
+    <div class="footer-brand">CLEMENTI<b>GUIDE</b></div>
+    <div class="footer-info">
+      <div>사업자명 : <span>CleMenTi / CleMenTi Guide</span></div>
+      <div>대표 : <span>김성규</span></div>
+      <div>사업자 등록번호 : <span>112-27-86351</span></div>
+    </div>
+    <div class="footer-copy">Copyright ⓒ CleMenTi. All Rights Reserved.</div>
   </div>
 </div>
 
